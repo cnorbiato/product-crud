@@ -1,0 +1,5 @@
+com/norbiato/core/product/service/ProductService.class
+com/norbiato/core/product/repository/ProductRepository.class
+com/norbiato/core/product/domain/Product.class
+com/norbiato/core/product/controller/ProductController.class
+com/norbiato/core/product/ProductApplication.class
