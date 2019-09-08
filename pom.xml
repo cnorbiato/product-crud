@@ -79,7 +79,7 @@
           </appSettings>
           <!-- End of App Settings  -->
 
-          <region>westeurope</region>
+          <region>eastus</region>
           <runtime>
             <os>linux</os>
             <javaVersion>jre8</javaVersion>
