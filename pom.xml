@@ -63,6 +63,9 @@
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <configuration>
           <schemaVersion>V2</schemaVersion>
+          <authentication>
+            <serverId>azure-auth</serverId>
+          </authentication>
           <resourceGroup>product-1567974311139-rg</resourceGroup>
           <appName>product-1567974311139</appName>
           <pricingTier>F1</pricingTier>
