@@ -66,8 +66,8 @@
           <authentication>
             <serverId>azure-auth</serverId>
           </authentication>
-          <resourceGroup>product-1567974311139-rg</resourceGroup>
-          <appName>product-1567974311139</appName>
+          <resourceGroup>norbiato-free-tier</resourceGroup>
+          <appName>fiap-test-api</appName>
           <pricingTier>F1</pricingTier>
 
           <!-- Begin of App Settings  -->
