@@ -50,7 +50,11 @@
       <groupId>org.projectlombok</groupId>  
       <artifactId>lombok</artifactId>  
       <scope>provided</scope> 
-    </dependency> 
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+    </dependency>
   </dependencies>  
   <build> 
     <plugins> 
@@ -63,9 +67,6 @@
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <configuration>
           <schemaVersion>V2</schemaVersion>
-          <authentication>
-            <serverId>azure-auth</serverId>
-          </authentication>
           <resourceGroup>norbiato-free-tier</resourceGroup>
           <appName>fiap-test-api</appName>
           <pricingTier>F1</pricingTier>
