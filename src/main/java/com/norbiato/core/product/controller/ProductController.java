@@ -20,7 +20,7 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public Product getProduct(@PathVariable Long productId){
+    public Product getProduct(@RequestParam Long productId){
         return productService.getProduct(productId);
     }
 
@@ -30,12 +30,12 @@ public class ProductController {
     }
 
     @PatchMapping("/{id}")
-    public void updateProduct(@PathVariable Long productId ,@RequestBody Product product){
+    public void updateProduct(@RequestParam Long productId ,@RequestBody Product product){
         productService.updateProduct(productId, product);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Long productId){
+    public void deleteProduct(@RequestParam Long productId){
         productService.deleteProduct(productId);
     }
 
