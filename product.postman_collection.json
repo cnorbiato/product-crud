@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "144f22f1-7c55-41ba-9741-6986047e09ee",
+		"name": "Product Core API (Test API)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-product-crud.herokuapp.com/product",
+					"protocol": "https",
+					"host": [
+						"api-product-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-product-crud.herokuapp.com/product/1",
+					"protocol": "https",
+					"host": [
+						"api-product-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Produto 1\"\n}"
+				},
+				"url": {
+					"raw": "https://api-product-crud.herokuapp.com/product",
+					"protocol": "https",
+					"host": [
+						"api-product-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Produto 1\"\n}"
+				},
+				"url": {
+					"raw": "https://api-product-crud.herokuapp.com/product/1",
+					"protocol": "https",
+					"host": [
+						"api-product-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api-product-crud.herokuapp.com/product/1",
+					"protocol": "https",
+					"host": [
+						"api-product-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
